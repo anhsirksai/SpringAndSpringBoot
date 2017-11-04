@@ -12,8 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
 @SpringBootApplication
-public class SpringBootConsoleApplication implements CommandLineRunner {
-
+//public class SpringBootConsoleApplication implements CommandLineRunner {
+public class SpringBootConsoleApplication  {
 	@Autowired
 	DataSource dataSource;
 
@@ -24,9 +24,9 @@ public class SpringBootConsoleApplication implements CommandLineRunner {
 		SpringApplication.run(SpringBootConsoleApplication.class, args);
 	}
 
-	@Override
+/*	@Override
 	public void run(String... args) throws Exception {
 
 		cd.readConsole();
-	}
+	}*/
 }
